@@ -44,5 +44,6 @@ Hour, Minute, Second: .dt.hour, .dt.minute, .dt.second extract respective time c
 Quarter: .dt.quarter returns the quarter (1-4).
 '''
 
+df['CustomerName'].value_counts()
 
 
