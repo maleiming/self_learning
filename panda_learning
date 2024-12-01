@@ -9,6 +9,19 @@ data = {
     "PaymentMethod": ["Credit Card", "PayPal", "Cash", "Credit Card", "Debit Card"]
 }
 import pandas as pd
+ 
 df=pd.DataFrame(data)
+
 df['Date']=pd.to_datetime(df['Date'])
+
+df.select_dtypes(include=['object','category'])
+
+df.info()
+df.shape
+df.describe()
+df.head()
+df.tail()
+
+
+
 
