@@ -22,6 +22,27 @@ df.describe()
 df.head()
 df.tail()
 
+df['Date'].dt.year
+df['Date'].dt.month
+df['Date'].dt.day
+df['Date'].dt.day_name()
+df['Date'].dt.weekday
+df['Date'].dt.hour
+df['Date'].dt.minute
+df['Date'].dt.second
+
+
+'''
+###
+Common .dt Attributes
+Year: .dt.year extracts the year.
+Month: .dt.month extracts the month as a number (1-12).
+Day: .dt.day extracts the day of the month.
+Day Name: .dt.day_name() returns the name of the weekday.
+Weekday: .dt.weekday returns the day of the week as an integer (0=Monday, 6=Sunday).
+Hour, Minute, Second: .dt.hour, .dt.minute, .dt.second extract respective time components.
+Quarter: .dt.quarter returns the quarter (1-4).
+'''
 
 
 
